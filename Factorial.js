@@ -1,9 +1,12 @@
 // Santiago Pedraza Adrian Esteban 
 
-var fact=4;
-var resultado=fact;
+var n=0; 
 
-for(var i=1; i< fact; i++){
-    resultado=resultado*i
+function fact(n){
+   if (n<=1) {
+    return 1;
+   }
+   else{
+    return n*fact(n-1);
+   }
 }
-document.write(resultado); 
